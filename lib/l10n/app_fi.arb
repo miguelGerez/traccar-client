@@ -32,4 +32,9 @@
   "startAction": "Käynnistä seuranta",
   "stopAction": "Lopeta seuranta",
   "sosAction": "Lähetä SOS"
+  "sosSentMessage": "SOS sent",
+  "setPasswordTitle": "Set password",
+  "passwordPrompt": "Enter password",
+  "passwordHint": "Password",
+  "invalidPassword": "Invalid password"
 }
