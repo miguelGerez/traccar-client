@@ -31,5 +31,10 @@
   "optimizationMessage": "Para garantizar un seguimiento fiable, desactive la optimización de batería para esta aplicación.",
   "startAction": "Iniciar servicio",
   "stopAction": "Detener servicio",
-  "sosAction": "Enviar SOS"
+  "sosAction": "Enviar SOS",
+  "sosSentMessage": "SOS enviado",
+  "setPasswordTitle": "Establecer contraseña",
+  "passwordPrompt": "Introducir contraseña",
+  "passwordHint": "Contraseña",
+  "invalidPassword": "Contraseña incorrecta"
 }

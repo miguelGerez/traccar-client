@@ -31,5 +31,10 @@
   "optimizationMessage": "To ensure reliable tracking, please disable battery optimization for this app.",
   "startAction": "Запустити сервіс",
   "stopAction": "Зупинити сервіс",
-  "sosAction": "Відправити SOS"
+  "sosAction": "Відправити SOS",
+  "sosSentMessage": "SOS sent",
+  "setPasswordTitle": "Set password",
+  "passwordPrompt": "Enter password",
+  "passwordHint": "Password",
+  "invalidPassword": "Invalid password"
 }

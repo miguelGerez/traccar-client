@@ -31,5 +31,10 @@
   "optimizationMessage": "Per garantire un tracciamento affidabile, disattiva l'ottimizzazione batteria per questa app.",
   "startAction": "Avvia servizio",
   "stopAction": "Ferma servizio",
-  "sosAction": "Invia SOS"
+  "sosAction": "Invia SOS",
+  "sosSentMessage": "SOS sent",
+  "setPasswordTitle": "Set password",
+  "passwordPrompt": "Enter password",
+  "passwordHint": "Password",
+  "invalidPassword": "Invalid password"
 }

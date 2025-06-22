@@ -7,6 +7,7 @@ import 'package:traccar_client/quick_actions.dart';
 
 import 'l10n/app_localizations.dart';
 import 'main_screen.dart';
+import 'panic_screen.dart';
 import 'preferences.dart';
 
 void main() async {
@@ -34,10 +35,44 @@ class _MainAppState extends State<MainApp> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       await rateMyApp.init();
-      if (mounted && rateMyApp.shouldOpenDialog) {  
+      if (mounted && rateMyApp.shouldOpenDialog) {
         rateMyApp.showRateDialog(context);
       }
+      await _ensurePassword();
     });
+  }
+
+  Future<void> _ensurePassword() async {
+    final current = Preferences.instance.getString(Preferences.password);
+    if (current == null || current.isEmpty) {
+      final controller = TextEditingController();
+      final result = await showDialog<String>(
+        context: context,
+        builder: (_) => AlertDialog(
+          title: Text(AppLocalizations.of(context)!.setPasswordTitle),
+          content: TextField(
+            controller: controller,
+            obscureText: true,
+            decoration: InputDecoration(
+              hintText: AppLocalizations.of(context)!.passwordHint,
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text(AppLocalizations.of(context)!.cancelButton),
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(context, controller.text),
+              child: Text(AppLocalizations.of(context)!.saveButton),
+            ),
+          ],
+        ),
+      );
+      if (result != null && result.isNotEmpty) {
+        await Preferences.instance.setString(Preferences.password, result);
+      }
+    }
   }
 
   @override
@@ -60,7 +95,7 @@ class _MainAppState extends State<MainApp> {
       home: Stack(
         children: const [
           QuickActionsInitializer(),
-          MainScreen(),
+          PanicScreen(),
         ],
       ),
     );

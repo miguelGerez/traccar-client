@@ -31,5 +31,10 @@
   "optimizationMessage": "Schakel batterijoptimalisatie voor deze app uit om betrouwbare tracking te garanderen.",
   "startAction": "Service starten",
   "stopAction": "Service stoppen",
-  "sosAction": "SOS verzenden"
+  "sosAction": "SOS verzenden",
+  "sosSentMessage": "SOS sent",
+  "setPasswordTitle": "Set password",
+  "passwordPrompt": "Enter password",
+  "passwordHint": "Password",
+  "invalidPassword": "Invalid password"
 }

@@ -31,5 +31,10 @@
   "optimizationMessage": "Um zuverlässiges Tracking zu gewährleisten, bitte die Akkuoptimierung für diese App deaktivieren.",
   "startAction": "Dienst starten",
   "stopAction": "Dienst stoppen",
-  "sosAction": "SOS senden"
+  "sosAction": "SOS senden",
+  "sosSentMessage": "SOS sent",
+  "setPasswordTitle": "Set password",
+  "passwordPrompt": "Enter password",
+  "passwordHint": "Password",
+  "invalidPassword": "Invalid password"
 }

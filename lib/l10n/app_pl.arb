@@ -31,5 +31,10 @@
   "optimizationMessage": "Aby zapewnić niezawodne śledzenie, wyłącz optymalizację baterii dla tej aplikacji.",
   "startAction": "Uruchom usługę",
   "stopAction": "Zatrzymaj usługę",
-  "sosAction": "Wyślij SOS"
+  "sosAction": "Wyślij SOS",
+  "sosSentMessage": "SOS sent",
+  "setPasswordTitle": "Set password",
+  "passwordPrompt": "Enter password",
+  "passwordHint": "Password",
+  "invalidPassword": "Invalid password"
 }

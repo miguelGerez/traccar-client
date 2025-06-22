@@ -31,5 +31,10 @@
   "optimizationMessage": "لضمان تتبع موثوق، يرجى تعطيل تحسين البطارية لهذا التطبيق.",
   "startAction": "بدء الخدمة",
   "stopAction": "إيقاف الخدمة",
-  "sosAction": "إرسال SOS"
+  "sosAction": "إرسال SOS",
+  "sosSentMessage": "SOS sent",
+  "setPasswordTitle": "Set password",
+  "passwordPrompt": "Enter password",
+  "passwordHint": "Password",
+  "invalidPassword": "Invalid password"
 }

@@ -31,5 +31,10 @@
   "optimizationMessage": "To ensure reliable tracking, please disable battery optimization for this app.",
   "startAction": "Startēt servisu",
   "stopAction": "Apturēt servisu",
-  "sosAction": "Sūtīt SOS"
+  "sosAction": "Sūtīt SOS",
+  "sosSentMessage": "SOS sent",
+  "setPasswordTitle": "Set password",
+  "passwordPrompt": "Enter password",
+  "passwordHint": "Password",
+  "invalidPassword": "Invalid password"
 }
