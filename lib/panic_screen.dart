@@ -163,7 +163,7 @@ class _PanicScreenState extends State<PanicScreen> {
               ),
             ),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 24.0),
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: QuickCallSection(),
