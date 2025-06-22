@@ -32,4 +32,9 @@
   "startAction": "เริ่มต้นบริการ",
   "stopAction": "หยุดบริการ",
   "sosAction": "ส่ง SOS"
+  "sosSentMessage": "SOS sent",
+  "setPasswordTitle": "Set password",
+  "passwordPrompt": "Enter password",
+  "passwordHint": "Password",
+  "invalidPassword": "Invalid password"
 }

@@ -20,6 +20,7 @@ class Preferences {
   static const String buffer = 'buffer';
   static const String wakelock = 'wakelock';
   static const String stopDetection = 'stop_detection';
+  static const String password = 'password';
 
   static const String lastTimestamp = 'lastTimestamp';
   static const String lastLatitude = 'lastLatitude';
@@ -33,11 +34,28 @@ class Preferences {
         : SharedPreferencesOptions(),
       cacheOptions: SharedPreferencesWithCacheOptions(
         allowList: {
-          id, url, accuracy, distance, interval, angle, heartbeat,
-          fastestInterval, buffer,  wakelock, stopDetection,
-          lastTimestamp, lastLatitude, lastLongitude, lastHeading,
-          'device_id_preference', 'server_url_preference', 'accuracy_preference',
-          'frequency_preference', 'distance_preference', 'buffer_preference',
+          id,
+          url,
+          accuracy,
+          distance,
+          interval,
+          angle,
+          heartbeat,
+          fastestInterval,
+          buffer,
+          wakelock,
+          stopDetection,
+          password,
+          lastTimestamp,
+          lastLatitude,
+          lastLongitude,
+          lastHeading,
+          'device_id_preference',
+          'server_url_preference',
+          'accuracy_preference',
+          'frequency_preference',
+          'distance_preference',
+          'buffer_preference',
         },
       ),
     );

@@ -32,4 +32,9 @@
   "startAction": "Zaženi storitev",
   "stopAction": "Ustavi storitev",
   "sosAction": "Pošlji SOS"
+  "sosSentMessage": "SOS sent",
+  "setPasswordTitle": "Set password",
+  "passwordPrompt": "Enter password",
+  "passwordHint": "Password",
+  "invalidPassword": "Invalid password"
 }

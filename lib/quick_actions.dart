@@ -25,14 +25,17 @@ class _QuickActionsInitializerState extends State<QuickActionsInitializer> {
       switch (shortcutType) {
         case 'start':
           bg.BackgroundGeolocation.start();
+          break;
         case 'stop':
           bg.BackgroundGeolocation.stop();
+          break;
         case 'sos':
           try {
             await bg.BackgroundGeolocation.getCurrentPosition(samples: 1, persist: true, extras: {'alarm': 'sos'});
           } catch (error) {
             developer.log('Failed to send alert', error: error);
           }
+          break;
       }
       if (mounted) {
         SystemNavigator.pop();

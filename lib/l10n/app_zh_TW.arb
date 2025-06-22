@@ -32,4 +32,9 @@
   "startAction": "啟動服務",
   "stopAction": "停止服務",
   "sosAction": "發送SOS求救"
+  "sosSentMessage": "SOS sent",
+  "setPasswordTitle": "Set password",
+  "passwordPrompt": "Enter password",
+  "passwordHint": "Password",
+  "invalidPassword": "Invalid password"
 }

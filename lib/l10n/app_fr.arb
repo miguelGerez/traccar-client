@@ -32,4 +32,9 @@
   "startAction": "Démarrer le service",
   "stopAction": "Arrêter le service",
   "sosAction": "Envoyer un SOS"
+  "sosSentMessage": "SOS sent",
+  "setPasswordTitle": "Set password",
+  "passwordPrompt": "Enter password",
+  "passwordHint": "Password",
+  "invalidPassword": "Invalid password"
 }
