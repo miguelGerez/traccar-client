@@ -36,5 +36,6 @@
   "setPasswordTitle": "Establecer contraseña",
   "passwordPrompt": "Introducir contraseña",
   "passwordHint": "Contraseña",
+  "passwordLabel": "Contraseña",
   "invalidPassword": "Contraseña incorrecta"
 }

@@ -36,5 +36,6 @@
   "setPasswordTitle": "Set password",
   "passwordPrompt": "Enter password",
   "passwordHint": "Password",
+  "passwordLabel": "Password",
   "invalidPassword": "Invalid password"
 }
