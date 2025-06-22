@@ -14,6 +14,14 @@ Traccar Client is a GPS tracking app for Android and iOS. It runs in the backgro
 
 Just enter your server address, grant location permissions, and the app will automatically send periodic location reports in the background.
 
+## Password protection
+
+You can secure access to the main screen with a password.
+
+1. Open the **Settings** screen from the gear icon or the main menu.
+2. Tap **Password** and enter a value. Leaving the field empty will remove the password.
+3. When a password is set, opening the settings from the panic screen will prompt for it.
+
 ## Team
 
 - Anton Tananaev ([anton@traccar.org](mailto:anton@traccar.org))

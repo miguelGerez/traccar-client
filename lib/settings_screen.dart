@@ -99,6 +99,48 @@ class _SettingsScreenState extends State<SettingsScreen> {
     }
   }
 
+  Future<void> _editPassword(String title) async {
+    final controller = TextEditingController(
+      text: Preferences.instance.getString(Preferences.password) ?? '',
+    );
+    final result = await showDialog<String>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(title),
+        content: TextField(
+          controller: controller,
+          obscureText: true,
+          decoration: InputDecoration(
+            hintText: AppLocalizations.of(context)!.passwordHint,
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text(AppLocalizations.of(context)!.cancelButton),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, controller.text),
+            child: Text(AppLocalizations.of(context)!.saveButton),
+          ),
+        ],
+      ),
+    );
+    if (result != null) {
+      await Preferences.instance.setString(Preferences.password, result);
+      setState(() {});
+    }
+  }
+
+  Widget _buildPasswordTile() {
+    final stored = Preferences.instance.getString(Preferences.password);
+    return ListTile(
+      title: Text(AppLocalizations.of(context)!.passwordLabel),
+      subtitle: Text(stored != null && stored.isNotEmpty ? '••••••' : ''),
+      onTap: () => _editPassword(AppLocalizations.of(context)!.setPasswordTitle),
+    );
+  }
+
   Widget _buildListTile(String title, String key, bool isInt) {
     String? value;
     if (isInt) {
@@ -153,6 +195,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         children: [
           _buildListTile(AppLocalizations.of(context)!.idLabel, Preferences.id, false),
           _buildListTile(AppLocalizations.of(context)!.urlLabel, Preferences.url, false),
+          _buildPasswordTile(),
           _buildAccuracyListTile(),
           _buildListTile(AppLocalizations.of(context)!.distanceLabel, Preferences.distance, true),
           if (isHighestAccuracy || Platform.isAndroid && distance == 0)
