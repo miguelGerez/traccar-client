@@ -6,6 +6,7 @@ import 'package:flutter_background_geolocation/flutter_background_geolocation.da
 import 'l10n/app_localizations.dart';
 import 'main_screen.dart';
 import 'preferences.dart';
+import 'quick_call_section.dart';
 
 class PanicScreen extends StatefulWidget {
   const PanicScreen({super.key});
@@ -93,42 +94,45 @@ class _PanicScreenState extends State<PanicScreen> {
           ),
         ],
       ),
-      body: Center(
-        child: MouseRegion(
-          onEnter: (_) => setState(() {
-            _hovering = true;
-            _scale = 1.05;
-          }),
-          onExit: (_) => setState(() {
-            _hovering = false;
-            _scale = 1.0;
-          }),
-          child: GestureDetector(
-            onLongPress: () => _sendSos(context),
-            onTapDown: (_) => setState(() => _scale = 0.95),
-            onTapUp: (_) => setState(() => _scale = _hovering ? 1.05 : 1.0),
-            onTapCancel: () => setState(() => _scale = _hovering ? 1.05 : 1.0),
-            child: AnimatedScale(
-              scale: _scale,
-              duration: const Duration(milliseconds: 200),
-              child: Container(
-                width: 280,
-                height: 280,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  gradient: LinearGradient(
-                    colors: [Color(0xffef4444), Color(0xffdc2626)],
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black38,
-                      offset: Offset(0, 8),
-                      blurRadius: 20,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: MouseRegion(
+              onEnter: (_) => setState(() {
+                _hovering = true;
+                _scale = 1.05;
+              }),
+              onExit: (_) => setState(() {
+                _hovering = false;
+                _scale = 1.0;
+              }),
+              child: GestureDetector(
+                onLongPress: () => _sendSos(context),
+                onTapDown: (_) => setState(() => _scale = 0.95),
+                onTapUp: (_) => setState(() => _scale = _hovering ? 1.05 : 1.0),
+                onTapCancel: () => setState(() => _scale = _hovering ? 1.05 : 1.0),
+                child: AnimatedScale(
+                  scale: _scale,
+                  duration: const Duration(milliseconds: 200),
+                  child: Container(
+                    width: 280,
+                    height: 280,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: LinearGradient(
+                        colors: [Color(0xffef4444), Color(0xffdc2626)],
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black38,
+                          offset: Offset(0, 8),
+                          blurRadius: 20,
+                        ),
+                      ],
                     ),
-                  ],
-                ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
@@ -154,11 +158,17 @@ class _PanicScreenState extends State<PanicScreen> {
                       ),
                     ),
                   ],
+                  ),
                 ),
               ),
             ),
           ),
-        ),
+          const SizedBox(height: 24.0),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            child: QuickCallSection(),
+          ),
+        ],
       ),
     );
   }
