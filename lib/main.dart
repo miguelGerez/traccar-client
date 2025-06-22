@@ -7,6 +7,7 @@ import 'package:traccar_client/quick_actions.dart';
 
 import 'l10n/app_localizations.dart';
 import 'main_screen.dart';
+import 'panic_screen.dart';
 import 'preferences.dart';
 
 void main() async {
@@ -60,7 +61,7 @@ class _MainAppState extends State<MainApp> {
       home: Stack(
         children: const [
           QuickActionsInitializer(),
-          MainScreen(),
+          PanicScreen(),
         ],
       ),
     );
