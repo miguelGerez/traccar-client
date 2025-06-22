@@ -1,5 +1,4 @@
 import 'dart:developer' as developer;
-
 import 'package:flutter/material.dart';
 import 'package:flutter_background_geolocation/flutter_background_geolocation.dart' as bg;
 
@@ -133,37 +132,38 @@ class _PanicScreenState extends State<PanicScreen> {
                         ),
                       ],
                     ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Icon(Icons.warning_amber_rounded, size: 64, color: Colors.white),
-                    SizedBox(height: 16),
-                    Text(
-                      'EMERGENCIA',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    SizedBox(height: 4),
-                    Opacity(
-                      opacity: 0.7,
-                      child: Text(
-                        'Mantén presionado',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 14,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.warning_amber_rounded, size: 64, color: Colors.white),
+                        SizedBox(height: 16),
+                        Text(
+                          'EMERGENCIA',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 32,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
+                        SizedBox(height: 4),
+                        Opacity(
+                          opacity: 0.7,
+                          child: Text(
+                            'Mantén presionado',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 14,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                  ],
                   ),
                 ),
               ),
             ),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 24.0),
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: QuickCallSection(),
