@@ -31,7 +31,7 @@
   "optimizationMessage": "To ensure reliable tracking, please disable battery optimization for this app.",
   "startAction": "启动服务",
   "stopAction": "停止服务",
-  "sosAction": "发送求救信号"
+  "sosAction": "发送求救信号",
   "sosSentMessage": "SOS sent",
   "setPasswordTitle": "Set password",
   "passwordPrompt": "Enter password",

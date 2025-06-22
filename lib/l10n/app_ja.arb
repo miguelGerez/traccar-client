@@ -31,7 +31,7 @@
   "optimizationMessage": "To ensure reliable tracking, please disable battery optimization for this app.",
   "startAction": "サービス開始",
   "stopAction": "サービス停止",
-  "sosAction": "SOSを送信"
+  "sosAction": "SOSを送信",
   "sosSentMessage": "SOS sent",
   "setPasswordTitle": "Set password",
   "passwordPrompt": "Enter password",

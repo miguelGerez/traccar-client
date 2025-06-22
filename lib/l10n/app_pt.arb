@@ -31,7 +31,7 @@
   "optimizationMessage": "Para garantir um rastreio fiável, desative a otimização de bateria para esta aplicação.",
   "startAction": "Iniciar serviço",
   "stopAction": "Parar serviço",
-  "sosAction": "Enviar SOS"
+  "sosAction": "Enviar SOS",
   "sosSentMessage": "SOS sent",
   "setPasswordTitle": "Set password",
   "passwordPrompt": "Enter password",

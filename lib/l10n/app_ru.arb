@@ -31,7 +31,7 @@
   "optimizationMessage": "Чтобы обеспечить надёжное отслеживание, отключите оптимизацию батареи для этого приложения.",
   "startAction": "Запустить сервис",
   "stopAction": "Остановить сервис",
-  "sosAction": "Отправить SOS"
+  "sosAction": "Отправить SOS",
   "sosSentMessage": "SOS sent",
   "setPasswordTitle": "Set password",
   "passwordPrompt": "Enter password",

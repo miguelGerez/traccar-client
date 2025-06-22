@@ -31,7 +31,7 @@
   "optimizationMessage": "To ensure reliable tracking, please disable battery optimization for this app.",
   "startAction": "Įjungti servisą",
   "stopAction": "Sustabdyti servisą",
-  "sosAction": "Siųsti SOS"
+  "sosAction": "Siųsti SOS",
   "sosSentMessage": "SOS sent",
   "setPasswordTitle": "Set password",
   "passwordPrompt": "Enter password",

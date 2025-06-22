@@ -31,7 +31,7 @@
   "optimizationMessage": "To ensure reliable tracking, please disable battery optimization for this app.",
   "startAction": "Zaženi storitev",
   "stopAction": "Ustavi storitev",
-  "sosAction": "Pošlji SOS"
+  "sosAction": "Pošlji SOS",
   "sosSentMessage": "SOS sent",
   "setPasswordTitle": "Set password",
   "passwordPrompt": "Enter password",
