@@ -1,4 +1,4 @@
-package org.traccar.client
+package org.dalquin.client
 
 import io.flutter.embedding.android.FlutterActivity
 
