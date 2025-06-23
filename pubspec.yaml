@@ -35,7 +35,10 @@ flutter:
   uses-material-design: true
   generate: true
 
-flutter_icons:
+flutter_launcher_icons:
   android: true
   ios: true
-  image_path: assets/icon.png
+  image_path: assets/icon/icon.png
+  adaptive_icon_background: "#AB0809"
+  adaptive_icon_foreground: "assets/icon/icon.png"
+  adaptive_icon_foreground_inset: 16
