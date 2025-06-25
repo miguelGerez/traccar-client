@@ -1,5 +1,6 @@
 import 'dart:developer' as developer;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_background_geolocation/flutter_background_geolocation.dart' as bg;
 
 import 'l10n/app_localizations.dart';
@@ -19,6 +20,7 @@ class _PanicScreenState extends State<PanicScreen> {
   bool _hovering = false;
 
   Future<void> _sendSos(BuildContext context) async {
+    HapticFeedback.heavyImpact();
     try {
       await bg.BackgroundGeolocation.getCurrentPosition(
         samples: 1,
