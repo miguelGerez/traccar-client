@@ -1,7 +1,7 @@
 name: traccar_client
 description: "Traccar Client"
 publish_to: 'none'
-version: 9.4.1+101
+version: 9.4.3+103
 
 environment:
   sdk: ^3.7.2
@@ -23,6 +23,7 @@ dependencies:
   url_launcher: ^6.2.5
   shared_preferences_android: ^2.4.10
   wakelock_partial_android: ^1.0.0
+  mobile_scanner: ^7.0.1
 
 dev_dependencies:
   flutter_test:
